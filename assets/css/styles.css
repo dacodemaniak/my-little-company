@@ -102,6 +102,7 @@ footer ul li a {
     font-weight: bold;
 }
 
+
 a.btn {
     display:block;
     text-decoration: none;
@@ -111,10 +112,37 @@ a.btn {
 }
 .btn-primary {
     background-color: var(--primary);
+    transition: background-color .5s 0s ease-out;
 }
+.btn-primary:hover {
+    background-color: var(--dark-primary);
+    /** background-color: darken(color, 15%) **/
+}
+
 .btn-secondary {
     background-color: var(--secondary);
 }
 .btn-warning {
     background-color: var(--warning);
+}
+
+figure figcaption {
+    position: absolute;
+    top: 98%;
+    border-top: 2px solid var(--dark);
+    background-color: rgba(128, 128, 128, .5);
+    height: inherit;
+    width: inherit;
+    transition: top .8s .2s ease-in-out;
+}
+
+figure:hover figcaption {
+    top:0;
+}
+
+figure {
+    height: 183px;
+    width: 275px;
+    overflow: hidden;
+    position: relative;
 }
