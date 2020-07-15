@@ -1,3 +1,19 @@
+:root {
+    /**
+    *   Couleurs Bootstrap
+    **/
+    --primary:      #007bff;
+    --dark-primary: #03376e;
+    --secondary:    #6c757d;
+    --success:      #28a745;
+    --dark-success: #0a4a18;
+    --danger:       #dc3545;
+    --warning:      #ffc107;
+    --info:         #17a2b4;
+    --dark:         #343a40;
+    --light:        #ffffff;
+}
+
 /**
 * Repository : https://github.com/dacodemaniak/my-little-company
 **/
