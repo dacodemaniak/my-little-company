@@ -1,3 +1,19 @@
+:root {
+    /**
+    *   Couleurs Bootstrap
+    **/
+    --primary:      #007bff;
+    --dark-primary: #03376e;
+    --secondary:    #6c757d;
+    --success:      #28a745;
+    --dark-success: #0a4a18;
+    --danger:       #dc3545;
+    --warning:      #ffc107;
+    --info:         #17a2b4;
+    --dark:         #343a40;
+    --light:        #ffffff;
+}
+
 /**
 * Sélecteur : Balise fait référence aux balises du HTML
 **/
@@ -14,6 +30,15 @@ strong, em {
     color: blue;
 }
 
+div.logo {
+    height: 200px;
+    width: 200px;
+}
+
+div.logo a img {
+    height: auto;
+    width: 100%;
+}
 /**
 * Sélecteur : ID commence par le signe #
 **/
@@ -39,4 +64,34 @@ footer {
 footer ul li a {
     color: inherit;
     text-decoration: none;
+}
+
+/**
+* Sélecteur classes
+**/
+.btn {
+    
+    height: 1.5em;
+    width: 8em;
+    padding: .5em;
+    border-radius: 0.5em;
+    color: var(--light);
+    font-weight: bold;
+}
+
+a.btn {
+    display:block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.5em;
+    vertical-align: middle;
+}
+.btn-primary {
+    background-color: var(--primary);
+}
+.btn-secondary {
+    background-color: var(--secondary);
+}
+.btn-warning {
+    background-color: var(--warning);
 }
