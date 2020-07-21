@@ -101,7 +101,7 @@
 
                 <aside>
                     <!-- Formulaire de contact -->
-                    <form>
+                    <form method="get" action="">
                         <input type="text" name="lastname-ctrl" placeholder="Votre nom">
                         <input type="email" name="email-ctrl" placeholder="Votre email">
                         <input type="text" name="phone-ctrl" placeholder="Votre téléphone">
@@ -109,6 +109,50 @@
                             Objet de votre demande :
                         </label>
                         <textarea name="object-ctrl" id="object-ctrl"></textarea>
+                        <fieldset>
+                            <legend>Un peu plus sur vous...</legend>
+                            
+                            <label for="lead-ctrl">
+                                Comment vous connaissez-nous ?
+                            </label>
+                            <select name="lead-ctrl" id="lead-ctrl" size="1">
+                                <option value="">Sélectionnez...</option>
+                                <option value="1">Moteur de recherche</option>
+                                <option value="2">Réseaux sociaux</option>
+                                <option value="3">Autre...</option>
+                            </select>
+
+                            <label for="subscribe-ctrl">
+                                <input type="checkbox" name="subscribe-ctrl" id="subscribe-ctrl">
+                                Souscrire à la newsletter
+                            </label>
+                            <label>
+                                Vous êtes...
+                            </label>
+
+                            <label for="professional">
+                                <input type="radio" name="whoareyou" value="0" id="professional"> Professionnel
+                            </label>
+                            <label for="individual">
+                                <input type="radio" name="whoareyou" value="1" id="individual"> Particulier
+                            </label>
+                            <label for="both">
+                                <input type="radio" name="whoareyou" value="2" id="both"> Les deux
+                            </label>
+
+                            <label for="subjects-ctrl">
+                                Vous êtes intéressés par...
+                            </label>
+                            <select name="subjects-ctrl" multiple size="5">
+                                <option value="0">Tout !</option>
+                                <option value="1">Rien</option>
+                                <option value="2">Des trucs</option>
+                                <option value="3">Autre chose</option>
+                                <option value="4">La météo du week-end</option>
+                                <option value="5">Les vacances</option>
+                                <option value="6">L'apéro de vendredi</option>
+                            </select>
+                        </fieldset>
                         <button disabled>
                             Envoyer
                         </button>

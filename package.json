@@ -1,0 +1,24 @@
+{
+  "name": "my-little-company",
+  "version": "1.0.0",
+  "description": "Single Page App HTML / CSS / JS",
+  "main": "src/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dacodemaniak/my-little-company.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "JS"
+  ],
+  "author": "Jean-Luc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dacodemaniak/my-little-company/issues"
+  },
+  "homepage": "https://github.com/dacodemaniak/my-little-company#readme"
+}
