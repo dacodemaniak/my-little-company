@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/dacodemaniak/my-little-company/issues"
   },
-  "homepage": "https://github.com/dacodemaniak/my-little-company#readme"
+  "homepage": "https://github.com/dacodemaniak/my-little-company#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  }
 }
