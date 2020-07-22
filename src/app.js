@@ -44,12 +44,34 @@ $(document).ready(
         (event) => {
             console.log('Focus was lost on a required field... But which ?')
             const value = $(event.target).val()
+            let errorDiv = $(event.target).next('div')
+            if ($(event.target).attr('name') == 'email-ctrl') {
+                errorDiv = $(event.target).parents('.form-group').next('div')
+            }
             if (value == '') {
                 // How do i remove a class on the next div ?
-                $(event.target).next('div').removeClass('hidden')
+                errorDiv.removeClass('hidden')
             } else {
                 // Well, how do i add a class on the next div ?
-                $(event.target).next('div').addClass('hidden')
+                errorDiv.addClass('hidden')
+            }
+        }
+    )
+
+    // Manage focus event on required fields
+    $('[required]').on(
+        'focus',
+        (event) => {
+            let nextDiv = null;
+            if ($(event.target).attr('name') != 'email-ctrl') {
+               nextDiv = $(event.target).next('div') 
+            } else {
+                nextDiv = $(event.target).parents('div.form-group').next('div')
+            }
+            
+            console.log('Well i got the focus')
+            if (!nextDiv.hasClass('hidden')) {
+                nextDiv.addClass('hidden')
             }
         }
     )
