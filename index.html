@@ -15,6 +15,7 @@
 
         <!-- Lien vers le code Javascript : jQuery -->
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+        <script src="./src/app.js"></script>
     </head>
 
     <body><!-- Contenu visible du document -->
@@ -108,7 +109,7 @@
 
                 <aside>
                     <!-- Formulaire de contact -->
-                    <form method="get" action="">
+                    <form method="get" action="" id="contact-form">
                         <fieldset>
                             <legend>Qui êtes-vous...</legend>
                             <div class="form-group">
@@ -198,7 +199,7 @@
                                 </select>
                             </div>
                         </fieldset>
-                        <button class="btn btn-outline-success" disabled>
+                        <button id="send-button" class="btn btn-outline-success" disabled>
                             Envoyer
                         </button>
                     </form>
