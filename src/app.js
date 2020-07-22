@@ -75,6 +75,33 @@ $(document).ready(
             }
         }
     )
+
+    // Manage form submission
+    $('form#contact-form').on(
+        'submit',
+        (event) => {
+            console.log('Form was submit')
+
+            event.preventDefault() // Empêche le déclenchement de l'événement par défaut
+
+            // Récupérer les données du template
+            const snackbar = $('#snackbar').contents().clone()
+
+            console.log(JSON.stringify(snackbar))
+
+            // Ajouter les éléments du snackbar au contenu visible courant
+            $('body').append(snackbar)
+
+            // Laisser vivant 3s et supprimer le clone
+            setTimeout(
+                () => {
+                    snackbar.remove()
+                },
+                3000 // 3s
+            )
+
+        }
+    )
   }  
 )
 
